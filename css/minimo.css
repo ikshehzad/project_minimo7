@@ -1,0 +1,329 @@
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Ubuntu', sans-serif;*/
+/*font-family: 'Inconsolata', monospace;*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Playfair Display', serif;
+	color: #626262;
+
+}
+
+/*header start*/
+
+header{
+	padding: 45PX 0;
+	margin-bottom:20px;
+
+
+	
+}
+
+.wrapper{
+	width: 90%;
+	/*border: 1px solid black;*/
+	margin: 0 auto;
+	margin-top:20px;
+	overflow: hidden;
+
+}
+.logo{
+	width:12%;
+	float: left;
+	
+	
+
+
+
+}
+.logo img{
+	width:100px;
+	width: 100%
+
+}
+.menu{
+	width:80%;
+	float: right;
+	
+	margin-top:6PX;
+	
+}
+.menu ul{
+	float: right;
+
+}
+
+
+/*hover affects start*/
+.life{
+	display: inline;
+}
+.life a:before {
+  content: '';
+  border-bottom: solid 1px black;
+  position: absolute;
+  bottom: 0; left: 30%;
+  width: 0;
+  -webkit-transform: scale(0);
+     -moz-transform: scale(0);
+      -ms-transform: scale(0);
+       -o-transform: scale(0);
+          transform: scale(0); 
+}
+
+.life a:hover:before {
+  border-bottom: solid thin black;
+  width: 40%;
+  -webkit-animation: heartbeat-x 2s infinite ease-in;
+          animation: heartbeat-x 2s infinite ease-in;
+}
+
+.life a:hover {
+  -webkit-animation: heartbeat 2s infinite ease-in;
+          animation: heartbeat 2s infinite ease-in;
+}
+
+@-webkit-keyframes heartbeat {
+  0% { -webkit-transform: scale(1); }
+  10% { -webkit-transform: scale(1.1); }
+  20% { -webkit-transform: scale(1); }
+  30% { -webkit-transform: scale(1.1); }
+  40% { -webkit-transform: scale(1); }
+}
+
+
+
+
+@-webkit-keyframes heartbeat-x {
+  0% { -webkit-transform: scaleX(0); }
+  10% { -webkit-transform: scaleX(1); }
+  20% { -webkit-transform: scaleX(0); }
+  30% { -webkit-transform: scaleX(1); }
+  40% { -webkit-transform: scaleX(0); }
+}
+
+
+
+
+/*hover affects end*/
+
+
+
+
+.menu ul li{
+	float: left;
+	list-style: none;
+
+} 
+.menu ul li a{
+	color: #626262;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	padding: 0 60px;
+	transition:.5s;
+
+} 
+.menu ul li a:hover{
+		color: #000000;
+}
+.menu ul li:last-child a{
+	padding-right: 0;
+}
+/*hover affects start*/
+
+
+/*hover affects end*/
+
+
+
+
+
+
+/*header end*/
+
+/*banner start*/
+
+.banner{
+
+}
+.b-img{
+
+}
+.b-img img{
+	width: 100%;
+
+}
+/*banner end*/
+
+
+/*getaway start*/
+
+.getaway{
+	padding-top: 80px;
+	padding-bottom: 120px;
+
+}
+
+.wrapper1{
+	width: 75%;
+	margin: 0 auto;
+	/*border: 1px solid black;*/
+	overflow: hidden;
+
+}
+.g-text{
+
+}
+.p-u-light{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color: #b4ad9e;
+
+}
+.play-title{
+	font-weight: 400;
+	font-size: 30px;
+	margin-top:20px;
+	margin-bottom :30px;
+}
+.play-para{
+	font-weight: 400;
+	font-size: 15px;
+	color: #626262;
+	line-height: 26px;
+	word-spacing: 1px;
+	margin-bottom: 45px;
+}
+
+/*getaway end*/
+
+/*blogpart start*/
+.blog{
+
+}
+.part1{
+	width: 45%;
+	float: left;
+	
+
+
+}
+
+.part1:nth-child(even){
+	margin-left:10%;
+	
+
+}
+
+.part1 img{
+	width: 100%;
+	
+	padding-bottom: 25px;
+}
+
+/*blogpart end*/
+/*signup start*/
+.wrapper4{
+	width: 40%;
+	margin: 0 auto;
+	
+	padding-top:25px;
+	padding-bottom:40px; 
+}
+.wrapper4 h1{
+	text-align: center;
+}
+
+.email{
+	font-family: 'Playfair Display', serif;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid black ;
+	width: 65%;
+	margin-left:95px; 
+	margin-top:40px;
+	margin-bottom: 20px; 
+	background-color: #F0F0F0;
+
+
+
+}
+.sign{
+	margin-top:70px; 
+	margin-bottom:60px;
+	
+	background-color: #F0F0F0;
+}
+/*signup end*/
+
+/*blog2 start*/
+.wrapper2{
+	width: 13%;
+
+	
+	margin: 0 auto;
+
+}
+.button{
+	border: 1px solid black;
+	width: 100%;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	color: #626262;
+	padding:16px 12px;
+	margin-top: 130px;
+	margin-bottom:200px;
+	background-color:white;
+}
+
+
+/*blog2 end*/
+
+/*fotter start*/
+
+footer{
+	padding-top: 20PX; 
+	padding-bottom:30px;
+	background-color: #F0F0F0;
+}
+
+.text{
+	width:25%;
+	float: left;
+
+}
+.text p{
+	font-family: 'Playfair Display', serif;
+	color: #000000;
+	
+	
+}
+.icon{
+	width:19%;
+	float: right;
+	
+}
+
+
+
+.icon p {
+	font-family: 'Playfair Display', serif;
+	color: #000000;
+	float:left;
+	padding-top: 5px;
+
+
+}
+.icon img{
+	float:left;
+	padding-left:30px;
+	
+
+
+
+}
+
+/*fotter end*/
